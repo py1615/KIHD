@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LIC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src ="main.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+            <input type="button" value="User Registration" onclick="userRegistration();">
+            <input type="button" value="Policy Registration" onclick="policyRegistration();">
+            <input type="button" value="Search" onclick="searchPage();">
+            <input type="button" value="Logout" onclick="logout();">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div id="title">
+            User Registration:
+        </div>
+        <div id="userRegistration">
+            <form name="userRegistration">
+                <table>
+                    <tr>
+                        <td>
+                            Agent ID:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentID"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            First Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentFirstName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentLastName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Agent Username:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentUsername"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Agent Password:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentPassword"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Department:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agentDepartment"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            User Type:<br><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="isAgent">Agent<br>
+                            <input type="radio" name="isManager">Manager<br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Submit" onclick="registerUser(this.form);">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
