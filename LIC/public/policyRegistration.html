@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LIC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src ="main.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+            <input type="button" value="User Registration" onclick="userRegistration();">
+            <input type="button" value="Policy Registration" onclick="policyRegistration();">
+            <input type="button" value="Search" onclick="searchPage();">
+            <input type="button" value="Logout" onclick="logout();">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div id="title">
+            Policy Registration:
+        </div>
+        <div id="policyRegistration">
+            <form name="policyRegistration">
+                <table>
+                    <tr>
+                        <td>
+                            First Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientFirstName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientLastName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date of Birth:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="dob"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Street Address:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientStreetAddress"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientCity"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            State:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientState"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Zip Code:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="clientZipCode"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Father's Age at Death:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="faad"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mother's Age at Death:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="maad"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cigarettes per Day:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="cigDay"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Smoking History:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="smokingHistory"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Systolic Blood Pressure:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="sbp"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Average Grams of Fat per Day:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="agfd"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Heart Disease:<br><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="hasHeartDisease">Yes<br>
+                            <input type="radio" name="noHeartDisease">No<br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cancer:<br><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="hasCancer">Yes<br>
+                            <input type="radio" name="noCancer">No<br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hospitalized:<br><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="hasBeenHospitalized">Yes<br>
+                            <input type="radio" name="noHospitalization">No<br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dangerous Activities:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="dangerousActivities" class="largeTextField"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Payoff Amount:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="payoffAmt"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Beneficiary First Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="beneficiaryFirstName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Beneficiary Last Name:<br><br>
+                        </td>
+                        <td>
+                            <input type="text" name="beneficiaryLastName"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Add Beneficiary" onclick=""><br><br>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Get Quote" onclick="registerUser(this.form);">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
